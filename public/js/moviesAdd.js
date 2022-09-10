@@ -29,40 +29,49 @@ window.onload = function(){
               letra.push(secreto)
                 break;
             case 'e':
-                letra.push(secreto)
-                ++estadoSecreto;
+                if(estadoSecreto = 1){
+                    letra.push(secreto)
+                    ++estadoSecreto;
+                }
             break;
             case 'c':
-                letra.push(secreto)
-                ++estadoSecreto;
+                if(estadoSecreto = 2){
+                    letra.push(secreto)
+                    ++estadoSecreto;
+                }
             break;
             case 'r':
-                letra.push(secreto)
-                ++estadoSecreto;
+                if(estadoSecreto = 3){
+                    letra.push(secreto)
+                    ++estadoSecreto;
+                }
             break;
             case 'e':
-                letra.push(secreto)
-                ++estadoSecreto;
+                if(estadoSecreto = 4){
+                    letra.push(secreto)
+                    ++estadoSecreto;
+                }
             break;
             case 't':
-                letra.push(secreto)
-                ++estadoSecreto;
+                if(estadoSecreto = 5){
+                    letra.push(secreto)
+                    ++estadoSecreto;
+                }
             break;
             case 'o':
-                letra.push(secreto)
-                estadoSecreto = 0;
+                if(estadoSecreto = 6){
+                    letra.push(secreto)
+                    estadoSecreto = 0;
+                    alert('SECRETO MáGICO')
+                }
             break;
             
-        
             default:
                 estadoSecreto = 0
                 letra = []
                 console.log(estadoSecreto);
                 console.log(letra);
                 break;
-        }
-        if(letra.length == 7){
-            alert('SECRETO MáGICO')
         }
     
     }
