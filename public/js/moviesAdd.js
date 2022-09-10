@@ -12,10 +12,7 @@ window.onload = function(){
     })
 
 
-
-    
     let estadoSecreto = 0;
-    let letra = []
     document.onkeydown = 
     function mensaje(e){
        
@@ -26,51 +23,42 @@ window.onload = function(){
             
             case 's':
                 ++estadoSecreto;
-              letra.push(secreto)
                 break;
             case 'e':
                 if(estadoSecreto = 1){
-                    letra.push(secreto)
-                    ++estadoSecreto;
+                ++estadoSecreto;
                 }
             break;
             case 'c':
                 if(estadoSecreto = 2){
-                    letra.push(secreto)
-                    ++estadoSecreto;
+                ++estadoSecreto;
                 }
             break;
             case 'r':
                 if(estadoSecreto = 3){
-                    letra.push(secreto)
-                    ++estadoSecreto;
+                ++estadoSecreto;
                 }
             break;
             case 'e':
                 if(estadoSecreto = 4){
-                    letra.push(secreto)
-                    ++estadoSecreto;
+                 ++estadoSecreto;
                 }
             break;
             case 't':
                 if(estadoSecreto = 5){
-                    letra.push(secreto)
-                    ++estadoSecreto;
+                ++estadoSecreto;
                 }
             break;
             case 'o':
-                if(estadoSecreto = 6){
-                    letra.push(secreto)
-                    estadoSecreto = 0;
-                    alert('SECRETO MáGICO')
+                if(estadoSecreto === +6){
+                estadoSecreto = 0;
+                alert('SECRETO MÁGICO')
                 }
             break;
             
             default:
                 estadoSecreto = 0
-                letra = []
                 console.log(estadoSecreto);
-                console.log(letra);
                 break;
         }
     
